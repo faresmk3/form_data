@@ -1,0 +1,19 @@
+{
+  "name": "aljr_hw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "Fares MOUWAKEH",
+  "license": "ISC",
+  "description": "a brief application to get data from a form and put it in a database",
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
