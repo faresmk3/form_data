@@ -3,22 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Form Data Collection</title>
   </head>
   <body>
     <h1>Form</h1>
-    <form action="/submit" method="post">
-      <label for="activity-name">Activity Name :</label>
-      <input type="text" id="activity-name" name="activity-name" required />
+    <div class="container">
+      <form action="/submit" method="post">
+        <!-- activity name -->
+        <div class="fields">
+          <label for="activity-name">Activity Name :</label>
+          <input type="text" id="activity-name" name="activity-name" required />
 
-      <label for="activity-number">Activity-number :</label>
-      <input type="text" name="activity-number" id="activity-number" />
+          <!-- activity number -->
+          <label for="activity-number">Activity-number :</label>
+          <input type="text" name="activity-number" id="activity-number" />
 
-      <label for="activity-type">Activity-Type :</label>
-      <input type="text" name="activity-type" id="activity-type" />
+          <!-- activity type -->
+          <label for="activity-type">Activity-Type :</label>
+          <input type="text" name="activity-type" id="activity-type" />
+        </div>
 
-      <label for="activity-descriptor">Activity-descriptor :</label>
-      <textarea id="activity-descriptor" name="activity-descriptor"></textarea>
-    </form>
+        <!-- Involved Workpackage -->
+        <div class="fields">
+          <label for="involved-workpackage">Involved-workpackage :</label>
+          <label for="workpackage">Flood defences</label>
+          <input type="checkbox" name="workpackage" id="workpackage" />
+          <label for="emergency">Emergency response</label>
+          <input type="checkbox" name="emergency" id="emergency" />
+          <label for="infra">Knowledge infrastructure</label>
+          <input type="checkbox" name="infra" id="infra" />
+        </div>
+
+        <!-- Objective -->
+        <div class="fields">
+          <label for="objective">Objective :</label>
+          <textarea id="objective" name="objective"></textarea>
+        </div>
+
+        <!-- activity descriptor -->
+        <label for="activity-descriptor">Activity-descriptor :</label>
+        <textarea
+          id="activity-descriptor"
+          name="activity-descriptor"
+        ></textarea>
+
+        <!-- linked to themes -->
+        <div class="fields">
+          <label for="Linked to theme">Linked to theme :</label>
+          <label for="breaching">Breaching </label>
+          <input type="checkbox" name="breaching" id="breaching" />
+          <label for="anomalies">Animal- & vegetation-induced anomalies</label>
+          <input type="checkbox" name="anomalies" id="anomalies" />
+          <label for="erosion">Erosion</label>
+          <input type="checkbox" name="erosion" id="erosion" />
+          <label for="levee-repairs">Temporary levee repairs</label>
+          <input type="checkbox" name="levee-repairs" id="levee-repairs" />
+          <label for="levee-survey">Levee survey & monitoring technique</label>
+          <input type="checkbox" name="levee-survey" id="levee-survey" />
+          <label for="collab">Prolonged collaboration</label>
+          <input type="checkbox" name="collab" id="collab" />
+        </div>
+
+        <div class="fields">
+          <label for="Activity Time">Activity Time</label>
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" name="start-date" />
+
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" name="end-date" />
+
+          <label for="active-time-length">Active Time Length:</label>
+          <label for="active-time-length-days">Days :</label>
+          <input
+            type="text"
+            id="active-time-length-days"
+            name="active-time-length-days"
+          />
+          <label for="active-time-length-hours">Hours :</label>
+          <input
+            type="text"
+            id="active-time-length-hours"
+            name="active-time-length-hours"
+          />
+          <label for="other-time">Other :</label>
+          <textarea id="other-time" name="other-time"></textarea>
+        </div>
+
+        <div class="feilds">
+          <label for="levee-stretch">Levee Stretch:</label>
+          <input type="text" id="levee-stretch" name="levee-stretch" />
+
+          <label for="latitude">Coordinates/Latitude (WGS):</label>
+          <input type="text" id="latitude" name="latitude" />
+
+          <label for="longitude">Coordinates/Longitude (WGS):</label>
+          <input type="text" id="longitude" name="longitude" />
+
+          <label for="altitude">Coordinates/Altitude (mTAW):</label>
+          <input type="text" id="altitude" name="altitude" />
+        </div>
+
+        <h2>Detailed information about the activity</h2>
+        <div class="sub-section">
+          <label for="pre-conditions">Pre-conditions :</label>
+          <textarea id="pre-conditions" name="pre-conditions"></textarea>
+          <label for="activity-descriptor">Activity-Descriptor :</label>
+          <textarea
+            id="activity-descriptor"
+            name="activity-descriptor"
+          ></textarea>
+          <label for="equipments">Equipments :</label>
+          <textarea id="equipments" name="equipments"></textarea>
+          <label for="monitoring">Monitoring & Sensors :</label>
+          <textarea id="monitoring" name="monitoring"></textarea>
+          <label for="limits">Limits :</label>
+          <textarea id="limits" name="limits"></textarea>
+        </div>
+
+        <div class="sub-section">
+          <label for="during-activity">During-Activity :</label>
+          <textarea id="during-activity" name="during-activity"></textarea>
+          <label for="post-activity-cond">Post-Activity-conditions : :</label>
+          <textarea
+            id="post-activity-cond"
+            name="post-activity-cond"
+          ></textarea>
+          <label for="immediate-results">Immediate results :</label>
+          <textarea id="immediate-results" name="immediate-results"></textarea>
+          <label for="res-ccl">Result/ Conclusion :</label>
+          <textarea id="res-ccl" name="res-ccl"></textarea>
+          <label for="infra-knoweldge">Infrastructure-Knoweldge :</label>
+          <textarea id="infra-knoweldge" name="infra-knoweldge"></textarea>
+          <label for="other-key-info">Other key information :</label>
+          <textarea id="other-key-info" name="other-key-info"></textarea>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
