@@ -6,10 +6,10 @@ const { Pool } = pkg;
 
 // PostgreSQL connection pool
 const pool = new Pool({
-  user: "postgres", // Your PostgreSQL username
-  host: "localhost", // Change if your DB is remote
-  database: "form_data", // Your database name
-  password: "gccprog.c", // Your PostgreSQL password
+  user: "postgres", //PostgreSQL username
+  host: "localhost",
+  database: "form_data", // database name
+  password: "gccprog.c", // PostgreSQL password
   port: 5432, // PostgreSQL default port
 });
 
